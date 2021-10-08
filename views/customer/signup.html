@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIgn up - Mega Services</title>
+    <link rel="shortcut icon" href="/img/icon.png" type="image/png" />
+    <link rel="stylesheet" href="https://bootswatch.com/5/zephyr/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/img/icon.png" alt="" width="28" height="28" class="d-inline-block align-text-top" />
+          <span class="mx-2">Mega Services</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="me-auto"></div>
+          <ul class="navbar-nav me-4">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+          <a class="btn btn-secondary me-2" href="/customer/login.html">Login</a>
+          <a class="btn btn-secondary" href="/customer/signup.html">Sign up</a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Main -->
+    <main class="container d-flex align-items-center justify-content-center">
+      <form class="col-12 col-sm-6 col-md-4" onsubmit="handleSignup(event)">
+        <h1 class="h3 mb-4 text-center">Sign up for an account</h1>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="firstName" placeholder="First name" required />
+          <label for="firstName">First name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="lastName" placeholder="Last name" required />
+          <label for="lastName">Last name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+          <label for="email">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="password" placeholder="Password" required />
+          <label for="password">Password</label>
+        </div>
+        <button class="w-100 btn btn-primary" type="submit">Sign up</button>
+      </form>
+    </main>
+    <!-- End Main -->
+    <!-- Footer -->
+    <footer class="py-3 mt-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+        <li class="nav-item"><a href="/customer/login.html" class="nav-link px-2 text-muted">Login</a></li>
+        <li class="nav-item"><a href="/customer/signup.html" class="nav-link px-2 text-muted">Sign up</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2021 Mega Services, Inc</p>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/customer-signup.js"></script>
+  </body>
+</html>

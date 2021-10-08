@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Mega Services</title>
+    <link rel="shortcut icon" href="/img/icon.png" type="image/png" />
+    <link rel="stylesheet" href="https://bootswatch.com/5/zephyr/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/img/icon.png" alt="" width="28" height="28" class="d-inline-block align-text-top" />
+          <span class="mx-2">Mega Services Admin</span>
+        </a>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Main -->
+    <main class="container d-flex align-items-center justify-content-center">
+      <form class="col-12 col-sm-6 col-md-4" onsubmit="handleLogin(event)">
+        <h1 class="h3 mb-4 text-center">Please log in</h1>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="text" placeholder="Username" required />
+          <label for="text">Username</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="password" placeholder="Password" required />
+          <label for="password">Password</label>
+        </div>
+        <button class="w-100 btn btn-primary" type="submit">Log in</button>
+      </form>
+    </main>
+    <!-- End Main -->
+    <!-- Footer -->
+    <footer class="py-3 mt-4 border-top">
+      <p class="text-center text-muted">&copy; 2021 Mega Services, Inc</p>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/admin-login.js"></script>
+  </body>
+</html>
