@@ -25,7 +25,7 @@ async function initServer() {
   // Routes
   app.use('/api/services', require('./routes/services'));
   app.use('/api/contact', require('./routes/contact'));
-  // app.use('/api/customer', require('./routes/customer'));
+  app.use('/api/customer', require('./routes/customer'));
 
   // Start the server
   server.listen(port, function () {
