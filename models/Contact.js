@@ -16,4 +16,4 @@ const schema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.models.Service || mongoose.model("Contact", schema);
+module.exports = mongoose.models.Contact || mongoose.model("Contact", schema);
